@@ -1,0 +1,131 @@
+.page#home {
+    width: 100%;
+    height: 100%;
+    position: abolute;
+    background-color: var(--white);
+    flex-direction: column;
+}
+
+.page#home header {
+    width: 100%;
+    height: 100vh;
+    padding: 2em 3em;
+    background: var(--white);
+    flex-direction: column;
+    background-image: url('../images/photos/cao-bonito-vista-frontal-com-a-cabeca-levantada.jpg');
+    background-size: cover;
+    animation: fadeimg 1s;
+}
+
+.page#home header .text {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    margin-top: 2em;
+}
+
+.page#home header .text h1 {
+    color: var(--darkblue);
+    animation: fade .5s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translateY(35%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+
+@keyframes fadeimg {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.page#home header .text button {
+    width: 100px;
+    height: 34px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, var(--white), var(--black5));
+    border-radius: 6px;
+    border: none;
+    animation: fade .7s;
+}
+
+.page#home header .text button a {
+    text-decoration: none;
+    color: var(--darkblue);
+    font-size: 15px;
+}
+
+.page#home .products {
+    width: 100%;
+    background-color: var(--white);
+    padding: 2em;
+    flex-direction: column;
+}
+
+.page#home .products h2 {
+    color: var(--darkblue);
+    margin-bottom: 0;
+}
+
+.page#home .products #text-products {
+    margin-bottom: 3em;
+    color: var(--black95);
+}
+
+.page#home .products .product {
+    padding-top: 1em;
+    align-items: center;
+    background-color: var(--white);
+    flex-direction: column;
+    border-bottom: dashed 1.5px var(--yellow);
+    margin-bottom: 2.5em;
+}
+
+.page#home .products .product img {
+    width: 35%;
+}
+
+.page#home .products .product .text {
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+.page#home .products .product .text p {
+    line-height: 2.2em;
+}
+
+.page#home .products .product .text p strong {
+    color: var(--blue);
+}
+
+.page#home .products .product .saiba-mais {
+    margin-bottom: 1em;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.page#home .products .product .saiba-mais a {
+    text-decoration: none;
+    color: var(--darkblue);
+    margin-bottom: .2em;
+}
+
+.page#home .products .product .saiba-mais i {
+    color: var(--darkblue);
+    margin: auto .2em;
+}
