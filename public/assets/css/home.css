@@ -10,23 +10,27 @@
     width: 100%;
     height: 100vh;
     padding: 2em 3em;
-    background: var(--white);
     flex-direction: column;
     background-image: url('../images/photos/cao-bonito-vista-frontal-com-a-cabeca-levantada.jpg');
     background-size: cover;
     animation: fadeimg 1s;
 }
 
-.page#home header .text {
+.page#home header .hero-text {
     flex-direction: column;
     width: 100%;
     align-items: flex-start;
-    margin-top: 2em;
 }
 
-.page#home header .text h1 {
+.page#home header .hero-text h1 {
     color: var(--darkblue);
+    font-size: 2.5em;
     animation: fade .5s;
+    z-index: 3;
+}
+
+.page#home header .texts {
+    display: none;
 }
 
 @keyframes fade {
@@ -48,7 +52,8 @@
         opacity: 1;
     }
 }
-.page#home header .text button {
+
+.page#home header .hero-text button {
     width: 100px;
     height: 34px;
     border: none;
@@ -58,27 +63,32 @@
     border-radius: 6px;
     border: none;
     animation: fade .7s;
+    margin-top: 1.3em;
 }
 
-.page#home header .text button a {
+.page#home header .hero-text button a {
     text-decoration: none;
     color: var(--darkblue);
     font-size: 15px;
 }
 
-.page#home .products {
+.page#home #section-products {
+    flex-direction: column;
+}
+
+.page#home .text-products {
     width: 100%;
     background-color: var(--white);
     padding: 2em;
     flex-direction: column;
 }
 
-.page#home .products h2 {
+.page#home .text-products h2 {
     color: var(--darkblue);
     margin-bottom: 0;
 }
 
-.page#home .products #text-products {
+.page#home .text-products #p-products {
     margin-bottom: 3em;
     color: var(--black95);
 }
@@ -89,34 +99,49 @@
     background-color: var(--white);
     flex-direction: column;
     border-bottom: dashed 1.5px var(--yellow);
-    margin-bottom: 2.5em;
+    margin: 0 1em 2.5em 1em;
+}
+
+.page#home .products {
+    flex-direction: column;
+}
+
+.page#home .products .product {
+    flex: 1;
+}
+
+.page#home .products #silvestre {
+    margin-bottom: 0;
+    border: none;
+}
+
+.page#home .products .product .forma {
+    flex-direction: column;
+}
+
+.page#home .products .product .sabores {
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .page#home .products .product img {
     width: 35%;
 }
 
-.page#home .products .product .text {
+/* .page#home .products .product .text {
     width: 100%;
     padding: 1em;
     text-align: center;
     justify-content: center;
     align-items: center;
     padding-bottom: 0;
-}
-
-.page#home .products .product .text p {
-    line-height: 2.2em;
-}
-
-.page#home .products .product .text p strong {
-    color: var(--blue);
-}
+    flex-direction: column;
+} */
 
 .page#home .products .product .saiba-mais {
-    margin-bottom: 1em;
+    margin: 1.5em 0 1em 0;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .page#home .products .product .saiba-mais a {
@@ -128,4 +153,149 @@
 .page#home .products .product .saiba-mais i {
     color: var(--darkblue);
     margin: auto .2em;
+}
+
+.page#home .uso-topico {
+    width: 100%;
+    flex-direction: column;
+    background-color: var(--yellow50);
+}
+
+.page#home .uso-topico svg {
+    width: 100%;
+}
+
+.page#home .uso-topico .tipos-de-usos {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.page#home .uso-topico .tipos-de-usos .usos {
+    flex-direction: column;
+    width: 100%;
+    display: grid;
+    padding: 10px;
+}
+
+.page#home .uso-topico .tipos-de-usos .usos .uso {
+    flex-direction: column;
+    width: 50%;
+    padding: 30px 0;
+}
+
+.page#home .uso-topico .tipos-de-usos .usos .coluna1 {
+    grid-template-columns: auto auto;
+}
+
+.page#home .uso-topico .tipos-de-usos .usos #usos1 {
+    border-right: dashed 1px var(--yellow);
+    border-bottom: dashed 1px var(--yellow);
+}
+
+.page#home .uso-topico .tipos-de-usos .usos #usos2 {
+    border-bottom: dashed 1px var(--yellow);
+}
+
+.page#home .uso-topico .tipos-de-usos .usos #usos3 {
+    border-right: dashed 1px var(--yellow);
+}
+
+.page#home .uso-topico .tipos-de-usos h4 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.page#home .uso-topico .tipos-de-usos h5 {
+    margin: 1em 0;
+    font-size: 16px;
+}
+
+.page#home .uso-topico .tipos-de-usos .usos .uso p {
+    margin: .3em 0;
+}
+
+
+
+@media (min-width: 768px) {
+    .page#home header {
+        background-image: url('../images/photos/cachorro-sem-fundo.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 992px) {
+    .page#home header .hero-text button {
+        margin-top: 1.5em;
+    }
+
+    .page#home header .texts {
+        display: block;
+        z-index: 2;
+    }
+    
+    .page#home header .texts::before {
+        content: '';
+        background-color: #ffffff20;
+        border: 1px solid var(--white);
+        width: 521px;
+        height: 661px;
+        position: absolute;
+        transform: rotate(45deg);
+        border-radius: 40px;
+        left: -285px;
+        top: 109px;
+        z-index: 1;
+    }
+
+    .page#home header .texts .text {
+        flex-direction: column;
+        padding: .3em 0em;
+        border-radius: 10px;
+        margin: .5em 0;
+    }
+
+    .page#home header .texts .text h3 {
+        margin: .3em;
+        color: var(--blue);
+        font-size: 1.4em;
+        z-index: 3;
+    }
+
+    .page#home header .texts .text p {
+        margin: .3em;
+        color: var(--darkblue);
+        font-size: 1.1em;
+    }
+
+    .page#home .products {
+        flex-direction: row;
+    }
+    
+    .page#home .products .product {
+        border: none;
+    }
+
+    .page#home .products #silvestre {
+        margin-bottom: 2.5em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .page#home .uso-topico {
+        flex-direction: row;
+        height: 80vh;
+    }
+
+    .page#home .uso-topico svg {
+        width: 100%;
+        height: 100%;
+        margin: auto 0 auto 5%;
+    }
+
+    .page#home .uso-topico .tipos-de-usos {
+        margin: auto 0;
+        width: 100%;
+    }
 }

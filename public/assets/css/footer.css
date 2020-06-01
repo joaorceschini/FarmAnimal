@@ -1,7 +1,7 @@
 footer {
+    margin-top: 30px;
     width: 100%;
     flex-direction: column;
-    background-color: #fcfcfc;
 }
 
 footer .columns {
@@ -12,13 +12,13 @@ footer .columns {
 footer .columns .column {
     width: 100%;
     align-items: center;
-    justify-content: center;
+    padding-bottom: 2.5em;
+    justify-content: space-around;
 }
 
 footer .columns .column .column-text{
     width: 100%;
     flex-direction: column;
-    padding: 0 2em 2em 2em;
     align-items: center;
     text-align: center;
 }
@@ -53,9 +53,9 @@ footer .direitos p {
 }
 
 footer #column-redes-sociais {
-    margin: 1em;
-    flex: 1;
     justify-content: center;
+    width: 100%;
+    padding-bottom: 1.2em;
 }
 
 footer #column-redes-sociais img {
@@ -69,16 +69,16 @@ footer #column-redes-sociais img {
     }
 }
 
+@media (min-width: 576px) {
+    footer .columns {
+        flex-direction: column;
+    }
+}
+
 @media (min-width: 992px) {
     footer .columns {
-        height: 280px; 
-    }
-    footer .columns #column-contact{
-        margin-right: 40%;
-    }
-
-    footer #column-redes-sociais {
-        padding-right: 4em;
+        flex-direction: row;
+        height: 280px;
     }
 }
 

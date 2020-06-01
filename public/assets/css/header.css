@@ -144,12 +144,12 @@
     }
 
     .header .logo::after {
-        content: 'alblues';
-        margin: auto 0;
-        margin-top: 6px;
-        font-size: 30px;
-        color: var(--blue);
-        font-family: 'Pacifico', cursive;
+        content: 'FarmAnimal';
+        color: var(--black);
+        margin: auto .6em;
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--darkblue);
     }
 
     .header .menu ul {

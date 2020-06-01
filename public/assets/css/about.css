@@ -1,0 +1,84 @@
+.page#about {
+    flex-direction: column;
+}
+
+.page#about header {
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page#about header svg {
+    width: 100%;
+}
+
+.page#about header .hero-text {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 2em;
+}
+
+.page#about header .hero-text h1, 
+.page#about header .hero-text h3 {
+    margin: .3em 0;
+}
+
+.page#about header .hero-text h1 {
+    margin-top: 1em;
+    color: var(--darkblue);
+    font-size: 40px;
+}
+
+.page#about header .hero-text h3 {
+    color: var(--blue);
+    font-size: 20px;
+}
+
+.page#about header svg {
+    margin: auto 0;
+}
+
+.page#about .autoridade {
+    width: 100%;
+    height: 800px;
+    background-color: var(--black5);
+    flex-direction: column;
+}
+
+.page#about .autoridade .text {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2em;
+}
+
+.page#about .autoridade .text h4 {
+    color: var(--yellow);
+    font-size: 22px;
+    margin: 2em 0 .5em 0;
+}
+
+.page#about .autoridade .text p {
+    font-size: 18px;
+}
+
+.page#about .autoridade .img-autoridade {
+    margin: 5em 0 0 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/photos/tem-de-tudo-aqui.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 992px) {
+    .page#about header {
+        flex-direction: row;
+    }
+
+    .page#about header .hero-text {
+        padding-top: 250px;
+        height: 100%;
+    }
+}
