@@ -29,7 +29,7 @@
     margin-top: 1em;
     color: var(--darkblue);
     font-size: 40px;
-}
+} 
 
 .page#about header .hero-text h3 {
     color: var(--blue);
@@ -43,33 +43,122 @@
 .page#about .autoridade {
     width: 100%;
     height: 800px;
-    background-color: var(--black5);
-    flex-direction: column;
+    background-image: url('../images/photos/gato-borboleta.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .page#about .autoridade .text {
     flex-direction: column;
     align-items: center;
     padding: 0 2em;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.page#about .autoridade .text .text-mobile {
+    flex-direction: column;
+}
+
+.page#about .autoridade .text .text-desktop {
+    display: none;    
 }
 
 .page#about .autoridade .text h4 {
-    color: var(--yellow);
+    color: var(--blue);
     font-size: 22px;
     margin: 2em 0 .5em 0;
 }
 
 .page#about .autoridade .text p {
     font-size: 18px;
+    color: var(--white);
 }
 
-.page#about .autoridade .img-autoridade {
-    margin: 5em 0 0 0;
+.page#about .historico {
     width: 100%;
-    height: 100%;
-    background-image: url('../images/photos/tem-de-tudo-aqui.png');
-    background-size: 100%;
+    height: 800px;
+    background-image: url('../images/photos/cat-historico-vertical.jpg');
+    flex-direction: column;
     background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page#about .historico .text {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2em;
+    height: 100%;
+    background-color: rgba(72, 74, 75, 0.7);
+}
+
+.page#about .historico .text .text-mobile {
+    flex-direction: column;
+}
+
+.page#about .historico .text .text-desktop {
+    display: none;    
+}
+
+.page#about .historico .text h4 {
+    color: var(--yellow);
+    font-size: 22px;
+    margin: 2em 0 .5em 0;
+}
+
+.page#about .historico .text p {
+    font-size: 18px;
+    color: var(--white);
+}
+
+.page#about .historias {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page#about .historias .historia {
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: .8em;
+}
+
+.page#about .historias .historia-primeiro-bloco {
+    flex-direction: column;
+}
+
+.page#about .historias .historia-segundo-bloco {
+    flex-direction: column;
+}
+
+.page#about .historias .historia#visao {
+    background-color: var(--black25);
+}
+
+.page#about .historias .historia#proposito {
+    background-color: var(--black25);
+}
+
+.page#about .historias .historia h5 {
+    font-size: 24px;
+    margin: .3em .5em;
+}
+
+.page#about .historias .historia h5 strong {
+    color: var(--blue);
+    font-size: 26px;
+}
+
+.page#about .historias .historia  p {
+    margin: .3em .9em;
+}
+
+@media (min-width: 576px) {
+    .page#about .historico {
+        background-position: 0 -1vw;
+    }
 }
 
 @media (min-width: 992px) {
@@ -80,5 +169,103 @@
     .page#about header .hero-text {
         padding-top: 250px;
         height: 100%;
+    }
+    
+    .page#about .autoridade .text .text-mobile {
+        display: none;
+    }
+
+    .page#about .autoridade .text .text-desktop {
+        display: block;
+    }
+
+    .page#about .historico {
+        background-position: 0 -30vw;
+    }
+
+    .page#about .historico .text .text-mobile {
+        display: none;
+    }
+
+    .page#about .historico .text .text-desktop {
+        display: block;
+    }
+
+    .page#about .historias .historia-primeiro-bloco {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .page#about .historias .historia-segundo-bloco {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .page#about .historias .historia {
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        padding-bottom: .8em;
+    }
+
+    .page#about .historias .historia#missao {
+        background-color: var(--black25);
+    }
+
+    .page#about .historias .historia#visao {
+        background-color: var(--white);
+    }
+}
+
+@media (min-width: 1200px) {
+    .page#about header svg {
+        width: 130%;
+    }
+
+    .page#about .historico {
+        background-position: 0 0;
+    }
+
+    .page#about .autoridade {
+        background-image: url('../images/photos/dog-real-auoridade.jpg');
+        background-size: cover;
+        background-position: 0 0vw;
+    }
+
+    .page#about .autoridade .text {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .page#about .autoridade {
+        background-position: 0 0vw;
+    }
+
+    .page#about .autoridade .text {
+        align-items: flex-start;
+        padding-right: 60%;
+        padding-left: 3.5em;
+    }
+    
+    .page#about .historico .text {
+        align-items: flex-start;
+        padding-right: 60%;
+        padding-left: 3.5em;
+    }
+
+    .page#about .historico {
+        background-image: url('../images/photos/cat-historico.jpg');
+    }
+}
+
+@media (min-width: 1680px) {
+    .page#about header svg {
+        width: 130%;
+    }
+
+    .page#about .autoridade .text {
+        background-color: rgba(0, 0, 0, 0.2);
     }
 }
