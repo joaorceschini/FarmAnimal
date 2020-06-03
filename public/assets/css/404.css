@@ -1,0 +1,51 @@
+.page#error {
+    padding: 2.5em;
+}
+
+.page#error .content {
+    width: 100%;
+    flex: 1;
+    padding-left: 3em;
+    flex-direction: column;
+}
+
+.page#error .text {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.page#error .text h1 {
+    color: var(--darkblue);
+}
+
+.page#error .text p a {
+    text-decoration: none;
+    color: var(--blue);
+    transition: color .3s;
+}
+
+.page#error .text p a:hover {
+    color: var(--yellow);
+}
+
+.page#error .svg {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.page#error .svg svg {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .page#error .content {
+        flex-direction: row;
+    }
+
+    .page#error .text {
+        align-items: flex-start;
+        justify-content: center;
+    }
+}

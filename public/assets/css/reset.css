@@ -96,6 +96,7 @@ form textarea {
   
 form textarea {
     height: 170px;
+    resize: vertical;
 }
   
 form select {

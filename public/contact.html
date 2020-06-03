@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmAnimal</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="shortcut icon" href="assets/images/icon/veterinary.svg" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div id="overlay" data-close="menu"></div>
+        <div class="logo">
+            <img src="assets/images/logo/logo.jpg" alt="logo">
+        </div>
+        <button type="button" id="btn-open">
+            <img src="assets/images/icon/open-menu.jpg" alt="btn-open">
+        </button>
+        <nav class="menu">
+            <button type="button" id="btn-close" data-close="menu">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul> 
+                <li><a href='/index.html'>Início</a></li>
+                <li><a href='/about.html'>Sobre</a></li>
+                <li><a href='/products.html'>Produtos</a></li>
+                <li><a href='/contact.html'>Contato</a></li> 
+            </ul>
+            <div class="cadastro-div">
+                <a href="/login.html" id="cadastro"><strong>Cadastro / Login</strong></a>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="page" id="contact">
+        <div class="map"></div>
+        <form action="">
+            <h1>Contato</h1>
+            <fieldset>
+                <legend>
+                    <h2>Preencha os dados para entrar em contato conosco</h2>
+                </legend>
+
+                <div class="field-group">
+                    <div class="field">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" placeholder="Digite seu nome">
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" placeholder="Digite seu email">
+                    </div>
+                </div>
+                <div class="field-group-gender">
+                    <div class="field-gender">
+                        <label>
+                            <input tabindex="2" type="radio" name="gender" required="" value="M" checked="">
+                            Masculino
+                        </label>
+                        
+                    </div>
+                    <div class="field-gender">
+                        <label>
+                            <input tabindex="3" type="radio" name="gender" required="" value="F">
+                            Feminino
+                        </label>
+                    </div>
+                </div>
+                <div class="field-group">
+                    <div class="field">
+                        <label for="phonenumber">Telefone</label>
+                        <input type="tel" name="phonenumber" placeholder="Digite seu numero de telefone">
+                    </div>
+                </div>
+                <div class="field-group">
+                    <div class="field">
+                        <label for="description">Descrição</label>
+                        <textarea name=""></textarea>
+                    </div>
+                </div>
+            </fieldset>
+            
+            <button type="submit">Fazer Login</button>
+            <div class="paragrafo">
+                <p>Ainda não fez um cadastro? Clique <a href="/cadastro.html">aqui</a> para fazer</p>
+            </div>
+        </form>
+        
+    </main>
+
+    <footer>
+        <div class="columns">
+            <div class="column" id="column-pages">
+                <div class="column-text">
+                    <h2>PÁGINAS</h2>
+                    <a href="/index.html">Início</a>
+                    <a href="/about.html"></a>
+                    <a href="/products.html">Produtos</a>
+                    <a href="/contact.html">Contato</a>
+                </div>
+            </div>
+            <div class="column" id="column-contact">
+                <div class="column-text">
+                    <h2>CONTATO</h2>
+                    <p>suporte@farmanimal.com.br</p>
+                    <p>+55 (11) 99912-9289</p>
+                    <p>São Paulo - SP</p>
+                </div>
+            </div>
+            <div id="column-redes-sociais">
+                <img src="assets/images/icon/facebook.svg" alt="facebook">
+                <img src="assets/images/icon/twitter.svg" alt="twitter">
+                <img src="assets/images/icon/instagram.svg" alt="instagram">
+                <img src="assets/images/icon/youtube.svg" alt="youtube">
+            </div>
+        </div>
+        <div class="direitos"><p>© 2020 FarmAnimal - Todos os direitos reservados.</p></div>
+    </footer>
+
+    <script src="assets/js/index.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
