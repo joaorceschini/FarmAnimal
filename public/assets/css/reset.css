@@ -52,17 +52,17 @@ form h1 {
     color: var(--darkblue);
 }
   
-form fieldset {
+fieldset {
     margin-top: 15px;
     padding: 0;
     border: none;
 }
   
-form legend {
+legend {
     margin-bottom: 25px;
 }
   
-form legend h2 {
+legend h2 {
     font-size: 24px;
     color: var(--yellow);
 }
