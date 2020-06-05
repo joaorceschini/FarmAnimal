@@ -191,7 +191,6 @@
     }
 
     .header .menu ul li {
-        margin: 0 10px;
         flex: 1;
         max-width: 90px;
     }
@@ -237,6 +236,12 @@
         font-weight: normal;
         color: var(--white);
         margin: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header .menu ul li {
+        margin: 0 10px;
     }
 }
 
