@@ -7,17 +7,17 @@
     width: 100%;
     height: 100vh;
     flex-direction: column;
-    /* background-image: url('../images/photos/horse.jpg');
+    background-image: url('../images/photos/bird.jpg');
     background-size: cover;
-    background-position: -23vh 0vw;
-    background-repeat: no-repeat; */
+    background-position: 0vh 0vw;
+    background-repeat: no-repeat;
 }
 
 .page#products header .hero-text {
     margin-top: 30px;
     height: 100%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-left: 30px;
     padding-bottom: 6.5em;
 }
@@ -27,7 +27,7 @@
 }
 
 .page#products header .hero-text h3 {
-    color: var(--black);
+    color: var(--white);
     margin: 0;
 }
 
@@ -45,7 +45,7 @@
 
 .page#products header .hero-text .text p {
     margin: .3em 0;
-    color: var(--black);
+    color: var(--white);
 }
 
 .page#products .products-animals {
@@ -106,7 +106,31 @@
 }
 
 .items-grid li:active {
-    border: 2px solid ;
+    border: 2px solid lightgreen;
+}
+
+.items-grid li #parrot {
+    width: 100%;
+    height: 17px;
+    justify-content: flex-end;
+}
+
+.items-grid li #parrot {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+}
+
+.items-grid li #parrot img {
+    width: 1.5px;
+    height: 1.5px;
+    background-color: black;
+}
+
+.items-grid li #parrot img:hover {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
 }
 
 @media (min-width: 600px) {
