@@ -21,6 +21,7 @@ footer .columns .column .column-text{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-top: 1em;
 }
 
 footer .columns .column .column-text h2 {

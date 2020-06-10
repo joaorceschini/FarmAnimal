@@ -76,32 +76,3 @@ function getCities(event) {
 document
   .querySelector('select[name=uf]')
   .addEventListener('change', getCities)
-
-  
-/* background squares */
-
-const ulSquares = document.querySelector('ul.squares');
-
-for (let i = 0; i < 15; i++) {
-    const li = document.createElement('li');
-
-    const random = (min, max) => Math.random() * (max - min) + min;
-
-    const size = Math.floor(random(8, 35));
-    const position = random(1, 95);
-    const delay = random(7, 0.1);
-    const duration = random(24, 10);
-
-    li.style.width = `${size}px`;
-    li.style.height = `${size}px`;
-    li.style.bottom = `${size}px`;
-
-    li.style.left = `${position}%`;
-
-    li.style.animationDelay = `${delay}s`;
-    li.style.animationDuration = `${duration}s`;
-
-    li.style.animationTimingFunction = `cubc-bezier(${Math.random()}, ${Math.random()}, ${Math.random()}, ${Math.random()})`
-
-    ulSquares.appendChild(li);
-}
