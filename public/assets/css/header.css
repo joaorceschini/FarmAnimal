@@ -29,6 +29,10 @@
     height: 35px;
 } 
 
+.header .logo a {
+    z-index: 6;
+}
+
 .header .logo {
     margin: 0;
     top: 0;

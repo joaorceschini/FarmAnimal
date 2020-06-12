@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sachê">
+    <title>FarmAnimal</title>
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="shortcut icon" href="../../assets/images/icon/veterinary.svg" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div id="overlay" data-close="menu"></div>
+        <div class="logo">
+            <a href="./index.html"><img src="../../assets/images/logo/logo.jpg" alt="logo"></a>
+        </div>
+        <button type="button" id="btn-open">
+            <img src="../../assets/images/icon/open-menu.jpg" alt="btn-open">
+        </button>
+        <nav class="menu">
+            <button type="button" id="btn-close" data-close="menu">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul> 
+                <li><a href='/index.html'>Início</a></li>
+                <li><a href='/about.html'>Sobre</a></li>
+                <li><a href='/products.html'>Produtos</a></li>
+                <li><a href='/contact.html'>Contato</a></li> 
+            </ul>
+            <div class="cadastro-div">
+                <a href="/login.html" id="cadastro"><strong>Cadastro / Login</strong></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page" id="product">
+        <section class="img-product">
+            <img src="../../assets/images/icon/sachet.svg" alt="">
+        </section>
+        <section class="info">
+            <h1>Sachê</h1>
+            <p>É um pallet muito top, bla bla bla, eu tenho q cvolocar algum texto de exmplo aqui, por isso estou escrevendo qualquer coisa que vem na cabeça.</p>
+            <div class="info-inputs">
+                <div class="mg">
+                    <div class="labels">    
+                        <input type="number" placeholder="Quantidade" id="quantidade">
+                        <div class="label">
+                            <label for="">
+                                <input tabindex="1" type="radio" name="mg" required="">
+                                20mg
+                            </label>
+                            <label for="">
+                                <input tabindex="2" type="radio" name="mg" required="">
+                                50mg
+                            </label>
+                            <label for="">
+                                <input tabindex="3" type="radio" name="mg" required="">
+                                100mg
+                            </label>
+                        </div>
+                    </div>
+                    <div class="textarea">
+                        <label for="">
+                            <textarea placeholder="Digite uma descriçao (opicional)"></textarea>
+                        </label>
+                    </div>
+                    <button type="submit">Comprar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="columns">
+            <div class="column" id="column-pages">
+                <div class="column-text">
+                    <h2>PÁGINAS</h2>
+                    <a href="/index.html">Início</a>
+                    <a href="/about.html">Sobre</a>
+                    <a href="/products.html">Produtos</a>
+                    <a href="/contact.html">Contato</a>
+                </div>
+            </div>
+            <div class="column" id="column-contact">
+                <div class="column-text">
+                    <h2>CONTATO</h2>
+                    <p>suporte@farmanimal.com.br</p>
+                    <p>+55 (11) 99912-9289</p>
+                    <p>São Paulo - SP</p>
+                </div>
+            </div>
+            <div id="column-redes-sociais">
+                <img src="../../assets/images/icon/facebook.svg" alt="facebook">
+                <img src="../../assets/images/icon/twitter.svg" alt="twitter">
+                <img src="../../assets/images/icon/instagram.svg" alt="instagram">
+                <img src="../../assets/images/icon/youtube.svg" alt="youtube">
+            </div>
+        </div>
+        <div class="direitos"><p>© 2020 FarmAnimal - Todos os direitos reservados.</p></div>
+    </footer>
+
+    <script src="../../assets/js/index.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

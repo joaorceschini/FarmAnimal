@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Produtos manipulados ou previamente preparados para seu cavalo!">
+    <title>FarmAnimal</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="shortcut icon" href="assets/images/icon/veterinary.svg" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div id="overlay" data-close="menu"></div>
+        <div class="logo">
+            <a href="index.html"><img src="assets/images/logo/logo.jpg" alt="logo"></a>
+        </div>
+        <button type="button" id="btn-open">
+            <img src="assets/images/icon/open-menu.jpg" alt="btn-open">
+        </button>
+        <nav class="menu">
+            <button type="button" id="btn-close" data-close="menu">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul> 
+                <li><a href='/index.html'>Início</a></li>
+                <li><a href='/about.html'>Sobre</a></li>
+                <li><a href='/products.html'>Produtos</a></li>
+                <li><a href='/contact.html'>Contato</a></li> 
+            </ul>
+            <div class="cadastro-div">
+                <a href="/login.html" id="cadastro"><strong>Cadastro / Login</strong></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page" id="animal">
+        <header>
+            <div class="hero-text">
+                <h1>Produtos para cavalos</h1>
+                <div class="text">
+                    <p>Nesta página você vai encontrar os produtos especificamente para seu cavalo, ao achar o que procura, clique sobre o mesmo</p>
+                </div>
+            </div>
+        </header>
+        <section class="products">
+            <section class="products-info">
+                <div class="text-info">
+                    <h3>FILTRO</h3>
+                    <label for="">
+                        <input type="checkbox">Pasta Oral
+                    </label>
+                    <label for="">
+                        <input type="checkbox">Liquido Oral com sabor
+                    </label>
+                    <label for="">
+                        <input type="checkbox">Sachê
+                    </label>
+                    <label for="">
+                        <input type="checkbox">Homeopatia
+                    </label>
+                    <label for="">
+                        <input type="checkbox">Florais em Veículo Não Alcóolico
+                    </label>
+                </div>
+            </section>
+            <div class="products-animal">
+                <a href="products/horse/pasta-oral.html"><li>
+                    <img src="assets/images/icon/toothpaste.svg" alt="shampoo">
+                    <div class="text">
+                        <h3>Pasta Oral</h3>
+                        <p>Pasta para uso oral</p>
+                    </div>
+                </li></a>
+                <a href="products/horse/liquido-oral-com-sabor.html"><li>
+                    <img src="assets/images/icon/water.svg" alt="shampoo">
+                    <div class="text">
+                        <h3>Liquido Oral com sabor</h3>
+                        <p>Liquido em forma de gotas para us oral</p>
+                    </div>
+                </li></a>
+                <a href="products/horse/sache.html"><li>
+                    <img src="assets/images/icon/sachet.svg" alt="shampoo">
+                    <div class="text">
+                        <h3>Sachê</h3>
+                        <p>Remédio em forma de sachê previamente praparado</p>
+                    </div>
+                </li></a>
+                <a href="products/horse/homeopatia.html"><li>
+                    <img src="assets/images/icon/medicine.svg" alt="shampoo">
+                    <div class="text">
+                        <h3>Homeopatia</h3>
+                        <p>Tratamento especializado</p>
+                    </div>
+                </li></a>
+                <a href="products/horse/florais-em-veiculo-nao-alcoolico.html"><li>
+                    <img src="assets/images/icon/parsley.svg" alt="shampoo">
+                    <div class="text">
+                        <h3>Florais em Veículo Não Alcóolico</h3>
+                        <p>Esses florais sao os mais tops de todos, ele te dao ablidades estraordinariamente estradordinarias, é top de mais</p>
+                    </div>
+                </li></a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="columns">
+            <div class="column" id="column-pages">
+                <div class="column-text">
+                    <h2>PÁGINAS</h2>
+                    <a href="/index.html">Início</a>
+                    <a href="/about.html">Sobre</a>
+                    <a href="/products.html">Produtos</a>
+                    <a href="/contact.html">Contato</a>
+                </div>
+            </div>
+            <div class="column" id="column-contact">
+                <div class="column-text">
+                    <h2>CONTATO</h2>
+                    <p>suporte@farmanimal.com.br</p>
+                    <p>+55 (11) 99912-9289</p>
+                    <p>São Paulo - SP</p>
+                </div>
+            </div>
+            <div id="column-redes-sociais">
+                <img src="assets/images/icon/facebook.svg" alt="facebook">
+                <img src="assets/images/icon/twitter.svg" alt="twitter">
+                <img src="assets/images/icon/instagram.svg" alt="instagram">
+                <img src="assets/images/icon/youtube.svg" alt="youtube">
+            </div>
+        </div>
+        <div class="direitos"><p>© 2020 FarmAnimal - Todos os direitos reservados.</p></div>
+    </footer>
+
+    <script src="assets/js/index.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
