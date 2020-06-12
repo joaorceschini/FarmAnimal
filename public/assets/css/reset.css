@@ -7,6 +7,7 @@
 @import '404.css';
 @import 'products.css';
 @import 'dog.css';
+@import 'products/dog/pallet-palatavel.css';
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
     
 * {
@@ -182,5 +183,133 @@ form .paragrafo p a:hover {
 @media (max-width: 380px) {
     form {
       padding: 20px;
+    }
+}
+
+/* PRODUTOS */
+
+.page#product {
+    width: 100%;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.page#product .img-product {
+    width: 100%;
+}
+
+.page#product .img-product img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.page#product .info {
+    margin-top: 1em;
+    flex-direction: column;
+}
+
+.page#product .info h1 {
+    color: var(--darkblue);
+}
+
+.page#product .info .info-inputs {
+    flex-direction: column;
+}
+
+.page#product .info .info-inputs .mg {
+    flex-direction: column;
+    margin: 1em 0;
+}
+
+.page#product .info .info-inputs .mg .labels {
+    flex-direction: column;
+    margin-bottom: 1.5em;
+}
+
+.page#product .info .info-inputs .mg .textarea {
+    width: 100%;    
+}
+
+.page#product .info .info-inputs .mg .textarea label {
+    width: 100%;
+}
+
+.page#product .info .info-inputs .mg .textarea textarea {
+    width: 100%;
+    background-color: #f0f0f5;
+  
+    border: none;
+    padding: 16px 24px;
+    font-size: 16px;
+  
+    border-radius: 8px;
+  
+    outline: none;
+    height: 170px;
+    resize: vertical;
+}
+
+.page#product .info .info-inputs .mg .labels .label {
+    margin-top: 1.5em;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* .page#product .info .info-inputs .mg .labels {
+    align-items: center;
+} */
+
+.page#product .info .info-inputs .mg .labels label {
+    flex-direction: row;
+}
+
+.page#product .info .info-inputs #quantidade {
+    background-color: #f0f0f5;
+  
+    border: none;
+    padding: 16px 24px;
+    font-size: 16px;
+  
+    border-radius: 8px;
+  
+    outline: none;
+}
+
+.page#product .info .info-inputs .mg button {
+    width: 100%;
+    height: 56px;
+    background-color: var(--lightblue);
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    margin-top: 1.5em;
+    transition: background-color .4s;
+    outline: none;
+}
+
+@media (min-width: 992px) {
+    .page#product {
+        padding: 4em 5em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .page#product {
+        flex-direction: row;
+    }
+
+    .page#product .info {
+        margin-left: 3em;
+    }
+}
+
+@media (min-width: 1700px) {
+    .page#product .img-product {
+        width: 80%;
     }
 }
