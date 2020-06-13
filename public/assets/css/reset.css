@@ -204,6 +204,7 @@ form .paragrafo p a:hover {
 .page#product .info {
     margin-top: 1em;
     flex-direction: column;
+    width: 100%;
 }
 
 .page#product .info h1 {
@@ -298,6 +299,10 @@ form .paragrafo p a:hover {
 @media (min-width: 992px) {
     .page#product {
         padding: 4em 5em;
+    }
+
+    .page#product .info {
+        width: 80%;
     }
 
     .page#product .img-product {
