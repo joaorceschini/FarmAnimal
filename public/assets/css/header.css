@@ -8,15 +8,16 @@
     position: relative;
     flex-direction: column;
     align-items: flex-start;
+    z-index: 10;
 }
 
 .header .menu {
-    transition: right .5s ease-in-out;
-    width: 270px;
-    height: 100vh;
+    transition: top .5s cubic-bezier(0.04, 0.98, 0.72, 1.02);
+    width: 100%;
+    height: 500px;
     position: fixed;
-    right: -270px;
-    top: 0;
+    right: 0;
+    top: -500px;
     z-index: 5;
     background: var(--lightblue);
     justify-content: space-between;
@@ -30,7 +31,7 @@
 } 
 
 .header .logo a {
-    z-index: 6;
+    z-index: 5;
 }
 
 .header .logo {
@@ -84,6 +85,7 @@
     background-color: var(--darkblue);
     transition: 400ms;
     text-decoration: none;
+    margin-bottom: 20px;
 }
 
 .header .menu #cadastro:hover {
@@ -136,7 +138,7 @@
 
 .open-menu #overlay {
     position: fixed;
-    top: 0;
+    top: 80px;
     left: 0;
     width: 100vw;
     height: 100vh;
@@ -146,7 +148,9 @@
 }
 
 .open-menu .header .menu {
-    right: 0;
+    top: 0px;
+    z-index: 10;
+    box-shadow: 0px 0px 10px 20px rgba(135, 196, 231, 0.2);
 }
 
 @media (min-width: 992px) {
@@ -160,7 +164,7 @@
 
     .header .menu {
         width: 100%;
-        height: initial;
+        height: 80px;
         background-color: initial;
         position: static;
         right: initial;
@@ -197,6 +201,8 @@
     .header .menu ul li {
         flex: 1;
         max-width: 90px;
+        margin: auto 0;
+        margin-top: 15px;
     }
 
     .header .menu ul li a {
@@ -215,7 +221,7 @@
         width: 100%;
         max-width: 250px;
         padding: 0;
-        margin: 20px;
+        margin: 15px;
         margin-right: 0;
         justify-content: center;
     }
