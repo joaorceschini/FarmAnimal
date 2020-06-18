@@ -118,7 +118,7 @@ form button {
     width: 100%;
     height: 56px;
   
-    background-color: var(--lightblue);
+    background-color: #63c9f495;
     border-radius: 8px;
   
     color: white;
@@ -138,11 +138,11 @@ form button {
 }
   
 form button:hover {
-    background-color: #2fb86e;
+    background-color: #fdcc5298;
 }
   
 form button:active {
-    background-color: #2db41f;
+    background-color: #fdcc52;
 }
   
 form .paragrafo {
